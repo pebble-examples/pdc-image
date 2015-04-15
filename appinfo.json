@@ -1,0 +1,25 @@
+{
+  "uuid": "595AEAF8-2580-4897-95E9-62FD07EAA2FE",
+  "shortName": "pdc-image",
+  "longName": "pdc-image",
+  "companyName": "MakeAwesomeHappen",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["basalt"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "type": "raw",
+        "name": "DRAW_COMMAND",
+        "file": "commands/image.pdc"
+      }
+    ]
+  }
+}

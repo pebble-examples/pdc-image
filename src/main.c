@@ -1,5 +1,5 @@
 /**
- * main.c - Sets up a Window and Layer that draws the GDrawCommandImage 
+ * main.c - Sets up a Window and Layer that draws the GDrawCommandImage
  * in its LayerUpdateProc.
  */
 
@@ -49,7 +49,6 @@ static void window_unload(Window *window) {
 static void init() {
   // Set up main Window
   s_main_window = window_create();
-  window_set_fullscreen(s_main_window, true);
   window_set_background_color(s_main_window, GColorJazzberryJam);
   window_set_window_handlers(s_main_window, (WindowHandlers) {
       .load = window_load,

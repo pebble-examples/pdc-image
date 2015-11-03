@@ -13,12 +13,17 @@ static GDrawCommandImage *s_command_image;
 static void update_proc(Layer *layer, GContext *ctx) {
   // Place image in the center of the Window
   GSize img_size = gdraw_command_image_get_bounds_size(s_command_image);
-  GPoint origin = GPoint(72 - (img_size.w / 2), 84 - (img_size.h / 2));
+  GRect bounds = layer_get_bounds(layer);
+
+  const GEdgeInsets frame_insets = {
+    .top = (bounds.size.h - img_size.h) / 2,
+    .left = (bounds.size.w - img_size.w) / 2
+  };
 
   // If the image was loaded successfully...
   if (s_command_image) {
     // Draw it
-    gdraw_command_image_draw(ctx, s_command_image, origin);
+    gdraw_command_image_draw(ctx, s_command_image, grect_inset(bounds, frame_insets).origin);
   }
 }
 

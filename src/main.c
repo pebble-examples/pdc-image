@@ -54,7 +54,7 @@ static void window_unload(Window *window) {
 static void init() {
   // Set up main Window
   s_main_window = window_create();
-  window_set_background_color(s_main_window, GColorJazzberryJam);
+  window_set_background_color(s_main_window, PBL_IF_COLOR_ELSE(GColorJazzberryJam, GColorWhite));
   window_set_window_handlers(s_main_window, (WindowHandlers) {
       .load = window_load,
       .unload = window_unload,

@@ -2,11 +2,11 @@
   "uuid": "595AEAF8-2580-4897-95E9-62FD07EAA2FE",
   "shortName": "pdc-image",
   "longName": "pdc-image",
-  "companyName": "MakeAwesomeHappen",
+  "companyName": "Pebble",
   "versionCode": 1,
   "versionLabel": "1.0",
   "sdkVersion": "3",
-  "targetPlatforms": ["basalt", "chalk"],
+  "targetPlatforms": ["aplite", "basalt", "chalk"],
   "watchapp": {
     "watchface": false
   },
